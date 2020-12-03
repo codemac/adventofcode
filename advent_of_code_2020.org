@@ -245,7 +245,7 @@ To begin, get your puzzle input.
 1866
 #+end_example
 
-#+begin_src scheme :var input=day1_input_1 :results raw :export both
+#+begin_src scheme :var input=day1_input_1 :results raw :exports both
   (define (find-2020-additions nums)
     (filter (lambda (x) (not (null? x))) 
 	    (map (lambda (z) (filter identity z))
@@ -275,7 +275,7 @@ answer, 241861950.
 In your expense report, what is the product of the three entries that
 sum to 2020?
 
-#+begin_src scheme :var input=day1_input_1 :results raw :export both
+#+begin_src scheme :var input=day1_input_1 :results raw :exports both
   (use-modules (srfi srfi-1))
 
   (define (dos-combos nums)
@@ -1357,7 +1357,7 @@ To begin, get your puzzle input.
 4-5 k: kkxxkn
 #+end_example
 
-#+begin_src scheme :var input=day2_input_1 :results raw :export both
+#+begin_src scheme :var input=day2_input_1 :results raw :exports both
   (use-modules (srfi srfi-1))
 
   (define (count-chars list char)
@@ -1428,7 +1428,7 @@ Given the same example list from above:
 How many passwords are valid according to the new interpretation of the policies?
 
 
-#+begin_src scheme :var input=day2_input_1 :results raw :export both
+#+begin_src scheme :var input=day2_input_1 :results raw :exports both
   (use-modules (srfi srfi-1))
 
   (define (password-valid entry)
